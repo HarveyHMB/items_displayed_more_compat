@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "items_displayed_more_compat",
+  "version": "${version}",
+  "name": "More Items Displayed Compatibility",
+  "description": "A minecraft mod that adds broccoli",
+  "authors": [],
+  "contact": {},
+  "license": "MPL-2.0",
+  "icon": "assets/items_displayed_more_compat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.harveyhmb.items_displayed_more_compat.client.ItemsDisplayedMoreCompatClient"
+    ],
+    "main": [
+      "com.harveyhmb.items_displayed_more_compat.ItemsDisplayedMoreCompat"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
