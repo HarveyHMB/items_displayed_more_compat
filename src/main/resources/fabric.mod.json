@@ -21,5 +21,8 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
+  },
+  "recommends": {
+    "tooltrims": ">=2.0.4"
   }
 }

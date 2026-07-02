@@ -1,0 +1,28 @@
+package com.harveyhmb.items_displayed_more_compat.event;
+
+import com.harveyhmb.items_displayed_more_compat.ItemsDisplayedMoreCompat;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLevelEvents;
+import net.freedinner.items_displayed.util.BlockItemMapper;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import org.jetbrains.annotations.NotNull;
+
+public class LoadServerWorldEvent implements ServerLevelEvents.Load {
+    @Override
+    public void onLevelLoad(@NotNull MinecraftServer server, @NotNull ServerLevel level) {
+        BuiltInRegistries.BLOCK.stream().filter(this::fromThisMod).forEach(
+                (Block block) -> BlockItemMapper.addEntry(block, getDroppedItem(block, level))
+        );
+    }
+    private boolean fromThisMod(Block block) {
+        return BuiltInRegistries.BLOCK.getKey(block).getNamespace().equals(ItemsDisplayedMoreCompat.MOD_ID);
+    }
+
+    private Item getDroppedItem(Block block, ServerLevel world) {
+        return Block.getDrops(block.defaultBlockState(), world, BlockPos.ZERO, null).getFirst().getItem();
+    }
+}
