@@ -18,6 +18,8 @@ public class ToolTrimsModCompatBlocks {
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.GRAVEL));
     public static final Block FROST_TOOL_TRIM = registerBlock("frost_tool_trim",
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SNOW));
+    public static final Block CHARGE_TOOL_TRIM = registerBlock("charge_tool_trim",
+            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SNOW));
 
     private static Block registerBlock(String name, Function<ResourceKey<@NotNull Block>,Block> function){
         ResourceKey<@NotNull Block> key=ResourceKey.create(BuiltInRegistries.BLOCK.key(), ItemsDisplayedMoreCompat.id(name));
