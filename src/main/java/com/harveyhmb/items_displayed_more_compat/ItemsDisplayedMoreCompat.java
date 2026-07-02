@@ -1,5 +1,6 @@
 package com.harveyhmb.items_displayed_more_compat;
 
+import com.harveyhmb.items_displayed_more_compat.compat.MoreArmorTrimsModCompatBlocks;
 import com.harveyhmb.items_displayed_more_compat.compat.ToolTrimsModCompatBlocks;
 import com.harveyhmb.items_displayed_more_compat.event.ModEvents;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,10 @@ public class ItemsDisplayedMoreCompat implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        if (FabricLoader.getInstance().isModLoaded("more_armor_trims"))
+        {
+            MoreArmorTrimsModCompatBlocks.registerBlocks();
+        }
         if (FabricLoader.getInstance().isModLoaded("tooltrims"))
         {
             ToolTrimsModCompatBlocks.registerBlocks();

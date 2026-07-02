@@ -13,15 +13,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Function;
 
-public class ToolTrimsModCompatBlocks {
-    public static final Block LINEAR_TOOL_TRIM = registerBlock("linear_tool_trim",
-            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.GRAVEL));
-    public static final Block FROST_TOOL_TRIM = registerBlock("frost_tool_trim",
-            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SNOW));
-    public static final Block CHARGE_TOOL_TRIM = registerBlock("charge_tool_trim",
-            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.DEEPSLATE));
-    public static final Block TRACKS_TOOL_TRIM = registerBlock("tracks_tool_trim",
-            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.STONE));
+public class MoreArmorTrimsModCompatBlocks {
+    public static final Block STORM_ARMOR_TRIM = registerBlock("storm_armor_trim",
+            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SAND));
 
     private static Block registerBlock(String name, Function<ResourceKey<@NotNull Block>,Block> function){
         ResourceKey<@NotNull Block> key=ResourceKey.create(BuiltInRegistries.BLOCK.key(), ItemsDisplayedMoreCompat.id(name));
