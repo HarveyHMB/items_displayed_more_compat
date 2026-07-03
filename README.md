@@ -1,4 +1,4 @@
-Items Displayed More Compatibility is a mod which aims to add compatibility for [Items Displayed](https://modrinth.com/mod/items-displayed) with many other mods.
+[Items Displayed More Compatibility](https://modrinth.com/mod/items-displayed-more-compatibility) is a mod which aims to add compatibility for [Items Displayed](https://modrinth.com/mod/items-displayed) with many other mods.
 
 ### Currently finished: 
 - [Tool Trims Mod](https://modrinth.com/mod/tool-trims-mod)
