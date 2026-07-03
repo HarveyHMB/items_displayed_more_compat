@@ -20,10 +20,10 @@
 - Nihility (More Armor Trims)
 - Origin (More Armor Trims)
 - Parasite (More Armor Trims) [KetchupCarlson]
-- Witness (More Armor Trims) [HarveyHMB]
 
 ### WIP (done):
 - Storm (More Armor Trims) [HarveyHMB]
+- Witness (More Armor Trims) [HarveyHMB]
 
 ## Credits:
 Models and textures based on those from [Items Displayed](https://modrinth.com/mod/items-displayed).

@@ -16,6 +16,8 @@ import java.util.function.Function;
 public class MoreArmorTrimsModCompatBlocks {
     public static final Block STORM_ARMOR_TRIM = registerBlock("storm_armor_trim",
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SAND));
+    public static final Block WITNESS_ARMOR_TRIM = registerBlock("witness_armor_trim",
+            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.RESIN));
 
     private static Block registerBlock(String name, Function<ResourceKey<@NotNull Block>,Block> function){
         ResourceKey<@NotNull Block> key=ResourceKey.create(BuiltInRegistries.BLOCK.key(), ItemsDisplayedMoreCompat.id(name));

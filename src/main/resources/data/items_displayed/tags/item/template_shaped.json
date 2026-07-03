@@ -5,6 +5,7 @@
     "tooltrims:frost_template",
     "tooltrims:charge_template",
     "tooltrims:tracks_template",
-    "more_armor_trims:storm_armor_trim_smithing_template"
+    "more_armor_trims:storm_armor_trim_smithing_template",
+    "more_armor_trims:witness_armor_trim_smithing_template"
   ]
 }
