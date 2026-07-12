@@ -18,6 +18,8 @@ public class MoreArmorTrimsModCompatBlocks {
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SAND));
     public static final Block WITNESS_ARMOR_TRIM = registerBlock("witness_armor_trim",
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.RESIN));
+    public static final Block GREED_ARMOR_TRIM = registerBlock("greed_armor_trim",
+            key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SAND));
 
     private static Block registerBlock(String name, Function<ResourceKey<@NotNull Block>,Block> function){
         ResourceKey<@NotNull Block> key=ResourceKey.create(BuiltInRegistries.BLOCK.key(), ItemsDisplayedMoreCompat.id(name));

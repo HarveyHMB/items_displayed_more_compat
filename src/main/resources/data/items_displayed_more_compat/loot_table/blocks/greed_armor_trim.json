@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_armor_trims:greed_armor_trim_smithing_template"
+        }
+      ]
+    }
+  ]
+}
