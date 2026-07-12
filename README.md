@@ -14,16 +14,16 @@
 - Twilight (More Armor Trims)
 
 ### WIP (hard to make):
-- Greed (More Armor Trims)
 - Fever (More Armor Trims)
 - Wraith (More Armor Trims)
 - Nihility (More Armor Trims)
 - Origin (More Armor Trims)
-- Parasite (More Armor Trims) [KetchupCarlson]
+- Parasite (More Armor Trims)
 
 ### WIP (done):
 - Storm (More Armor Trims) [HarveyHMB]
 - Witness (More Armor Trims) [HarveyHMB]
+- Greed (More Armor Trims) [HarveyHMB]
 
 ## Credits:
 Models and textures based on those from [Items Displayed](https://modrinth.com/mod/items-displayed).
