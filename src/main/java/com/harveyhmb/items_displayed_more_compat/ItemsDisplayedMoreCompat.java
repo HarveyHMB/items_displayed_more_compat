@@ -1,5 +1,6 @@
 package com.harveyhmb.items_displayed_more_compat;
 
+import com.harveyhmb.items_displayed_more_compat.compat.GeyserCompat;
 import com.harveyhmb.items_displayed_more_compat.compat.MoreArmorTrimsModCompatBlocks;
 import com.harveyhmb.items_displayed_more_compat.compat.ToolTrimsModCompatBlocks;
 import com.harveyhmb.items_displayed_more_compat.event.ModEvents;
@@ -22,6 +23,15 @@ public class ItemsDisplayedMoreCompat implements ModInitializer {
         if (FabricLoader.getInstance().isModLoaded("tooltrims"))
         {
             ToolTrimsModCompatBlocks.registerBlocks();
+        }
+        if (FabricLoader.getInstance().isModLoaded("geyser-fabric"))
+        {
+            System.out.println("Geyser loaded");
+            GeyserCompat.registerEventsStatic();
+        }
+        else
+        {
+            System.out.println("Geyser not loaded");
         }
         ModEvents.registerServerEventHandlers();
     }

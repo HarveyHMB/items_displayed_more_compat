@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.function.Function;
 
 public class ToolTrimsModCompatBlocks {
@@ -22,6 +23,13 @@ public class ToolTrimsModCompatBlocks {
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.DEEPSLATE));
     public static final Block TRACKS_TOOL_TRIM = registerBlock("tracks_tool_trim",
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.STONE));
+
+    public static final List<Block> TRIMS = List.of(
+            LINEAR_TOOL_TRIM,
+            FROST_TOOL_TRIM,
+            CHARGE_TOOL_TRIM,
+            TRACKS_TOOL_TRIM
+    );
 
     private static Block registerBlock(String name, Function<ResourceKey<@NotNull Block>,Block> function){
         ResourceKey<@NotNull Block> key=ResourceKey.create(BuiltInRegistries.BLOCK.key(), ItemsDisplayedMoreCompat.id(name));

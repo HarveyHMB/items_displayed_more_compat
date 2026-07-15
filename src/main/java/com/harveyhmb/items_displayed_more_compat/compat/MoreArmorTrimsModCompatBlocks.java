@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.function.Function;
 
 public class MoreArmorTrimsModCompatBlocks {
@@ -20,6 +21,12 @@ public class MoreArmorTrimsModCompatBlocks {
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.RESIN));
     public static final Block GREED_ARMOR_TRIM = registerBlock("greed_armor_trim",
             key -> ModTemplates.defaultArmorTrimBlock(key, SoundType.SAND));
+
+    public static final List<Block> TRIMS = List.of(
+            STORM_ARMOR_TRIM,
+            WITNESS_ARMOR_TRIM,
+            GREED_ARMOR_TRIM
+    );
 
     private static Block registerBlock(String name, Function<ResourceKey<@NotNull Block>,Block> function){
         ResourceKey<@NotNull Block> key=ResourceKey.create(BuiltInRegistries.BLOCK.key(), ItemsDisplayedMoreCompat.id(name));
